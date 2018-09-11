@@ -1,12 +1,12 @@
 安装  
-yum -y install salt-api
+yum -y install salt-api  
 
 
 設定api.conf 並放入/etc/salt/master.d/api.conf  
-external_auth:
-  pam:
-    salt:
-      - .*
+external_auth:  
+  pam:  
+    salt:  
+      - .*  
   
 rest_cherrypy:
   port: 8838
